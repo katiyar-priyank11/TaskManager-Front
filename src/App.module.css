@@ -1,0 +1,181 @@
+/* App Container */
+.container {
+  max-width: full;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #ff4d4d;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #ff4d4d;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+a {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox Styles */
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+/* Edit and Delete Buttons */
+.editDeleteButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.editDeleteButtons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.editDeleteButtons button.edit {
+  background-color: #1a1a1a;
+  color: #ff4d4d;
+}
+
+.editDeleteButtons button.delete {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.editDeleteButtons button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  input[type='text'] {
+    font-size: 12px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  .editDeleteButtons {
+    flex-direction: column;
+  }
+
+  .editDeleteButtons button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
